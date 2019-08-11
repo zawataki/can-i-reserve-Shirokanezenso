@@ -2,12 +2,22 @@
 A script to list a reservable date of [Shirokane Zensou (白金然荘)](https://www.tender-house.jp/restaurant/shirokane-zensou.html).
 
 # How to use
-1. Run by Node.js
+1. git clone
+```bash
+git clone https://github.com/zawataki/can-i-reserve-Shirokanezenso.git
+```
+
+2. Install necessary package
+```bash
+node install
+```
+
+3. Run by Node.js
 ```bash
 node list-reservable-date-of-Shirokane-Zensou.js
 ```
 
-2. You can get reservable date list like the following after a few seconds
+4. You can get reservable date list like the following after a few seconds
 ```bash
 2019-08-19
 2019-08-21
