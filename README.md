@@ -1,16 +1,36 @@
 # About
-A script to fetch a billing amount of money from [GREENa](https://ne-greena.jp/).
+A script to list a reservable date of [Shirokane Zensou (白金然荘)](https://www.tender-house.jp/restaurant/shirokane-zensou.html).
 
 # How to use
-1. Build Docker image
+1. Run by Node.js
 ```bash
-docker build -t puppeteer-chrome-linux .
+node list-reservable-date-of-Shirokane-Zensou.js
 ```
 
-2. Run the image as container to get the billing amount
+2. You can get reservable date list like the following after a few seconds
 ```bash
-docker run -i --rm --cap-add=SYS_ADMIN \
-  --name puppeteer-chrome puppeteer-chrome-linux \
-  node -e "`cat fetch-billing-amount.js`" \
-  -- --email 'test@example.com' --pass 'yourPassword'
+2019-08-19
+2019-08-21
+2019-08-31
+2019-09-02
+2019-09-03
+2019-09-04
+2019-09-06
+2019-09-07
+2019-09-09
+2019-09-10
+2019-09-11
+2019-09-12
+2019-09-13
+2019-09-15
+2019-09-17
+2019-09-18
+2019-09-19
+2019-09-20
+2019-09-22
+2019-09-25
+2019-09-26
+2019-09-27
+2019-09-30
 ```
+NOTE: Usually the script finishes within 10 seconds
