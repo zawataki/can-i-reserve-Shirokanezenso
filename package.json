@@ -1,0 +1,23 @@
+{
+  "name": "can-i-reserve-shirokanezenso",
+  "version": "1.0.0",
+  "description": "List reservable date of Shirokanezenso",
+  "main": "can-i-reserve-Shirokanezenso.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zawataki/can-i-reserve-Shirokanezenso.git"
+  },
+  "author": "Yuki Takizawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zawataki/can-i-reserve-Shirokanezenso/issues"
+  },
+  "homepage": "https://github.com/zawataki/can-i-reserve-Shirokanezenso#readme",
+  "dependencies": {
+    "puppeteer": "^1.19.0",
+    "puppeteer-core": "^1.19.0"
+  }
+}
