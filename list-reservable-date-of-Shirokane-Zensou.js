@@ -30,8 +30,7 @@ if (process.argv.length === 3 && ['--verbose', '-v'].includes(process.argv[2])) 
   showUsageAndExit();
 }
 
-
-(async () => {
+const main = async () => {
   const puppeteer = require('puppeteer');
   logger.debug('Launch Puppeteer');
   const browser = await puppeteer.launch();
@@ -97,4 +96,13 @@ if (process.argv.length === 3 && ['--verbose', '-v'].includes(process.argv[2])) 
   }
 
   await browser.close();
+};
+
+(async () => {
+  try {
+    await main();
+  } catch (e) {
+    logger.error('Failed to run script', e);
+    process.exit(1);
+  }
 })();
