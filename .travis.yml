@@ -3,6 +3,20 @@ language: node_js
 node_js:
   - "10"
 
+addons:
+  apt:
+    update: true
+    packages:
+    - fonts-ipafont-gothic
+    - fonts-wqy-zenhei
+    - fonts-thai-tlwg
+    - fonts-kacst
+    - ttf-freefont
+
+before_script:
+  - export LANG=ja_JP.UTF-8
+  - echo $LANG
+
 script:
   - node list-reservable-date-of-Shirokane-Zensou.js
 
