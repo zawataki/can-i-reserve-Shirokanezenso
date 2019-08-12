@@ -4,7 +4,7 @@ A script to list a reservable date of [Shirokane Zensou (白金然荘)](https://
 # How to use
 1. git clone
 ```bash
-git clone https://github.com/zawataki/can-i-reserve-Shirokanezenso.git
+git clone https://github.com/zawataki/list-reservable-date-ShirokaneZensou.git
 ```
 
 2. Install necessary package
