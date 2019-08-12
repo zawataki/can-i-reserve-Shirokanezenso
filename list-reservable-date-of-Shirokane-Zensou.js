@@ -51,7 +51,10 @@ const main = async () => {
   }
 
   logger.debug('Open reservation page');
-  const rsv_page_response = await page.goto(RSV_PAGE_URL);
+  const rsv_page_response = await page.goto(RSV_PAGE_URL, {
+    // Wait for font rendering
+    waitUntil: 'networkidle0'
+  });
   if (!rsv_page_response.ok()) {
     logger.error('Got error response code ' + rsv_page_response.status + ' from reservation page');
     await browser.close();
@@ -59,10 +62,7 @@ const main = async () => {
   }
 
   logger.debug('Search a div element that has target reservation plan from multiple plans');
-  await page.waitForSelector('div.shadowBox');
-  await page.waitFor(3000); // TODO Decrease this time or replace with another wait
   let divElements = await page.$$('div.shadowBox');
-
   let targetDivElement;
   for (const divElm of divElements) {
     let textContentProperty = await divElm.getProperty('textContent');
