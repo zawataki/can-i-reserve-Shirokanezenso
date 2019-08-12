@@ -69,7 +69,8 @@ const main = async () => {
     let textContentProperty = await divElm.getProperty('textContent');
 
     if (!firstDebugLogged) {
-      console.log('textContent: ', textContentProperty.toString());
+      console.log('textContent: ', textContentProperty);
+      console.log('textContent.toString: ', textContentProperty.toString());
       firstDebugLogged = true;
     }
 
