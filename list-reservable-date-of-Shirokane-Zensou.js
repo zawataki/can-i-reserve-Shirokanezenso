@@ -60,6 +60,7 @@ const main = async () => {
 
   logger.debug('Search a div element that has target reservation plan from multiple plans');
   await page.waitForSelector('div.shadowBox');
+  await page.waitFor(3000);
   let divElements = await page.$$('div.shadowBox');
   console.log('divElements length: ', divElements.length);
 
