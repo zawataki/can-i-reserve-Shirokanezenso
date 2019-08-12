@@ -59,6 +59,7 @@ const main = async () => {
   }
 
   logger.debug('Search a div element that has target reservation plan from multiple plans');
+  await page.waitForSelector('div.shadowBox');
   let divElements = await page.$$('div.shadowBox');
   let targetDivElement;
   for (const divElm of divElements) {
