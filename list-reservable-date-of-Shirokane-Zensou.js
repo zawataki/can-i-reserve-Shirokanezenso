@@ -61,6 +61,8 @@ const main = async () => {
   logger.debug('Search a div element that has target reservation plan from multiple plans');
   await page.waitForSelector('div.shadowBox');
   let divElements = await page.$$('div.shadowBox');
+  console.log('divElements: ', divElements);
+  console.log('divElements length: ', divElements.length);
   let targetDivElement;
   for (const divElm of divElements) {
     let str = await divElm.getProperty('textContent');
