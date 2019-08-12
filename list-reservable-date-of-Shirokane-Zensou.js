@@ -63,10 +63,12 @@ const main = async () => {
   let divElements = await page.$$('div.shadowBox');
   console.log('divElements: ', divElements);
   console.log('divElements length: ', divElements.length);
+
   let targetDivElement;
   for (const divElm of divElements) {
-    let str = await divElm.getProperty('textContent');
-    if (str.toString().includes('4階半個室貸切')) {
+    let textContentProperty = await divElm.getProperty('textContent');
+    console.log('textContent: ', textContentProperty.toString());
+    if (textContentProperty.toString().includes('4階半個室貸切')) {
       targetDivElement = divElm;
     }
   }
