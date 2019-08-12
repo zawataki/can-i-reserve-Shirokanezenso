@@ -60,21 +60,12 @@ const main = async () => {
 
   logger.debug('Search a div element that has target reservation plan from multiple plans');
   await page.waitForSelector('div.shadowBox');
-  await page.waitFor(3000);
+  await page.waitFor(3000); // TODO Decrease this time or replace with another wait
   let divElements = await page.$$('div.shadowBox');
-  console.log('divElements length: ', divElements.length);
 
   let targetDivElement;
-  let firstDebugLogged = false;
   for (const divElm of divElements) {
     let textContentProperty = await divElm.getProperty('textContent');
-
-    if (!firstDebugLogged) {
-      console.log('textContent: ', textContentProperty);
-      console.log('textContent.toString: ', textContentProperty.toString());
-      firstDebugLogged = true;
-    }
-
     if (textContentProperty.toString().includes('4階半個室貸切')) {
       targetDivElement = divElm;
     }
