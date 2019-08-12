@@ -15,9 +15,7 @@ addons:
     - libnss3
 
 before_script:
-  - export LANG=ja_JP.UTF-8
   - echo $LANG
-  - fc-list
 
 script:
   - node list-reservable-date-of-Shirokane-Zensou.js
