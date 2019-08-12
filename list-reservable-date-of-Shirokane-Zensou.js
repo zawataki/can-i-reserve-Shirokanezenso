@@ -64,9 +64,15 @@ const main = async () => {
   console.log('divElements length: ', divElements.length);
 
   let targetDivElement;
+  let firstDebugLogged = false;
   for (const divElm of divElements) {
     let textContentProperty = await divElm.getProperty('textContent');
-    console.log('textContent: ', textContentProperty.toString());
+
+    if (!firstDebugLogged) {
+      console.log('textContent: ', textContentProperty.toString());
+      firstDebugLogged = true;
+    }
+
     if (textContentProperty.toString().includes('4階半個室貸切')) {
       targetDivElement = divElm;
     }
