@@ -9,14 +9,7 @@ addons:
     packages:
     - fonts-ipafont-gothic
     - fonts-wqy-zenhei
-    - fonts-thai-tlwg
-    - fonts-kacst
-    - ttf-freefont
     - libnss3
-
-before_script:
-  - echo $LANG
 
 script:
   - node list-reservable-date-of-Shirokane-Zensou.js
-
