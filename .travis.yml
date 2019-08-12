@@ -3,13 +3,5 @@ language: node_js
 node_js:
   - "10"
 
-addons:
-  apt:
-    update: true
-    packages:
-    - fonts-ipafont-gothic
-    - fonts-wqy-zenhei
-    - libnss3
-
 script:
   - node list-reservable-date-of-Shirokane-Zensou.js
