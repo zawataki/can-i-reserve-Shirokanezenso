@@ -50,11 +50,10 @@ workflows:
    hourly:
      triggers:
        - schedule:
-           cron: "48 * * * *"
+           cron: "05 * * * *"
            filters:
              branches:
-               only:
-                 - master
+               only: master
      jobs:
        - build
 
