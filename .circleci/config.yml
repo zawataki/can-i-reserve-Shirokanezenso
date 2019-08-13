@@ -26,6 +26,8 @@ jobs:
 
       - run:
           name: Install Headless Chrome dependencies
+          # See https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md#running-puppeteer-on-circleci
+          # See https://circleci.com/orbs/registry/orb/threetreeslight/puppeteer#orb-source
           command: |
             sudo apt-get install -yq \
             gconf-service libasound2 libatk1.0-0 libatk-bridge2.0-0 libc6 libcairo2 libcups2 libdbus-1-3 \
