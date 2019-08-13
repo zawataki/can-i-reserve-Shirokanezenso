@@ -28,4 +28,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: node list-reservable-date-of-Shirokane-Zensou.js
+      - run: echo $?
 
