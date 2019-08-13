@@ -38,7 +38,10 @@ jobs:
           name: Run main script
           command: |
             node list-reservable-date-of-Shirokane-Zensou.js > result.txt
-            if [ cat result.txt | grep "$TARGET_DATE" > /dev/null ]; then
+            if cat result.txt | grep "$TARGET_DATE" > /dev/null; then
+              echo 'The target date is reservable'
               curl -X POST -H 'Content-type: application/json' --data '{"text":"Shirokane Zensou is reservable now!"}' "$SLACK_WEBHOOK_URL"
+            else
+              echo 'The target date is NOT reservable'
             fi
 
