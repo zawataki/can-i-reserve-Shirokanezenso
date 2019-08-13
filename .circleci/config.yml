@@ -23,6 +23,6 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: apt install -y libxtst
+      - run: sudo apt install -y libxtst
       - run: node list-reservable-date-of-Shirokane-Zensou.js
 
