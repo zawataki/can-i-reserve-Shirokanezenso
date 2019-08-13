@@ -48,3 +48,16 @@ jobs:
               echo 'The target date is NOT reservable'
             fi
 
+workflows:
+   version: 2
+   hourly:
+     triggers:
+       - schedule:
+           cron: "48 * * * *"
+           filters:
+             branches:
+               only:
+                 - master
+     jobs:
+       - build
+
