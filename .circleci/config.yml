@@ -1,8 +1,12 @@
-version: 2
+version: 2.1
+
+orbs:
+  puppeteer: threetreeslight/puppeteer@0.1.2
+
 jobs:
   build:
     docker:
-      - image: circleci/node:lts
+      - image: circleci/node:12
 
     working_directory: ~/repo
 
@@ -23,6 +27,5 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: sudo apt install -y libxtst-dev libnss3
       - run: node list-reservable-date-of-Shirokane-Zensou.js
 
