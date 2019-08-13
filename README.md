@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/zawataki/list-reservable-date-ShirokaneZensou.svg?branch=master)](https://travis-ci.org/zawataki/list-reservable-date-ShirokaneZensou)
+[![CircleCI](https://circleci.com/gh/zawataki/list-reservable-date-ShirokaneZensou.svg?style=svg)](https://circleci.com/gh/zawataki/list-reservable-date-ShirokaneZensou)
 
 # About
 A script to list a reservable date of [Shirokane Zensou (白金然荘)](https://www.tender-house.jp/restaurant/shirokane-zensou.html).
