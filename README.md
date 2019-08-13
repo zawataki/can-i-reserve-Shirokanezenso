@@ -3,6 +3,7 @@
 
 # About
 A script to list a reservable date of [Shirokane Zensou (白金然荘)](https://www.tender-house.jp/restaurant/shirokane-zensou.html).
+This script is UNOFFICIAL.
 
 # How to use
 1. git clone
