@@ -2,9 +2,6 @@ version: 2
 
 jobs:
   build:
-    branches:
-      only:
-        - master
     docker:
       - image: circleci/node:12
 
@@ -54,6 +51,10 @@ workflows:
      triggers:
        - schedule:
            cron: "48 * * * *"
+           filters:
+             branches:
+               only:
+                 - master
      jobs:
        - build
 
