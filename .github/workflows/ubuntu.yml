@@ -1,9 +1,8 @@
 name: ubuntu
 
 on:
-  push:
-  # schedule:
-  # - cron: 35 * * * *
+  schedule:
+  - cron: 31 * * * *
 
 jobs:
   build:
