@@ -1,27 +1,14 @@
 [![CircleCI](https://circleci.com/gh/zawataki/list-reservable-date-ShirokaneZensou.svg?style=svg)](https://circleci.com/gh/zawataki/list-reservable-date-ShirokaneZensou)
 
 # About
-A script to list a reservable date of [Shirokane Zensou (白金然荘)](https://www.tender-house.jp/restaurant/shirokane-zensou.html).
-This script is UNOFFICIAL.
+An UNOFFICIAL script to list a reservable date of a 4階半個室貸切 plan of [Shirokane Zensou (白金然荘)](https://www.tender-house.jp/restaurant/shirokane-zensou.html).
 
-# How to use
-1. git clone
+# Usage
 ```bash
-git clone https://github.com/zawataki/list-reservable-date-ShirokaneZensou.git
-cd list-reservable-date-ShirokaneZensou
+$ node list-reservable-date-of-Shirokane-Zensou.js
 ```
 
-2. Install necessary package
-```bash
-node install
-```
-
-3. Run by Node.js
-```bash
-node list-reservable-date-of-Shirokane-Zensou.js
-```
-
-4. You can get reservable date list like the following after a few seconds
+If succeeded, you can see the reservable date list like the following.
 ```bash
 2019-08-19
 2019-08-21
@@ -47,4 +34,16 @@ node list-reservable-date-of-Shirokane-Zensou.js
 2019-09-27
 2019-09-30
 ```
-NOTE: Usually the script finishes within 10 seconds
+NOTE: Usually, the script finishes within about 10 seconds.
+
+# Installation
+1. Fetch source code
+```bash
+$ git clone https://github.com/zawataki/list-reservable-date-ShirokaneZensou.git
+$ cd list-reservable-date-ShirokaneZensou
+```
+
+2. Install necessary packages
+```bash
+$ node install
+```
