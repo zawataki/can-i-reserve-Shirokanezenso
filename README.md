@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/zawataki/list-reservable-date-ShirokaneZensou.svg?style=svg)](https://circleci.com/gh/zawataki/list-reservable-date-ShirokaneZensou)
+[![Actions Status](https://github.com/zawataki/list-reservable-date-ShirokaneZensou/workflows/ubuntu/badge.svg)](https://github.com/zawataki/list-reservable-date-ShirokaneZensou/actions)
 
 # About
 An UNOFFICIAL script to list a reservable date of a 4階半個室貸切 plan of [Shirokane Zensou (白金然荘)](https://www.tender-house.jp/restaurant/shirokane-zensou.html).
