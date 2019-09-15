@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/zawataki/list-reservable-date-ShirokaneZensou.svg?branch=master)](https://travis-ci.org/zawataki/list-reservable-date-ShirokaneZensou)
 [![CircleCI](https://circleci.com/gh/zawataki/list-reservable-date-ShirokaneZensou.svg?style=svg)](https://circleci.com/gh/zawataki/list-reservable-date-ShirokaneZensou)
 
 # About
