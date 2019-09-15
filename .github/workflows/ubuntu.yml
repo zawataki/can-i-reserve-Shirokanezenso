@@ -1,7 +1,6 @@
 name: ubuntu
 
-on:
-  push:
+on: push
 
 jobs:
   build:
