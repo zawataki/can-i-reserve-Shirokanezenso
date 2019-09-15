@@ -1,8 +1,12 @@
 name: ubuntu
 
 on:
-  schedule:
-  - cron: 31 * * * *
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
 
 jobs:
   build:
