@@ -64,7 +64,7 @@ const main = async () => {
   logger.debug('Search a div element that has target reservation plan from multiple plans');
   let divElements = await page.$$('div.shadowBox');
   let targetDivElement;
-  const targetKeyword = '4階半個室貸切';
+  const targetKeyword = '個室貸切';
   for (const divElm of divElements) {
     let textContentProperty = await divElm.getProperty('textContent');
     if (textContentProperty.toString().includes(targetKeyword)) {
