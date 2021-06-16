@@ -46,5 +46,5 @@ $ cd list-reservable-date-ShirokaneZensou
 
 2. Install necessary packages
 ```bash
-$ node install
+$ npm install
 ```
