@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/zawataki/can-i-reserve-Shirokanezenso#readme",
   "dependencies": {
-    "log4js": "^4.5.1",
+    "log4js": "^6.4.0",
     "puppeteer": "^1.19.0"
   }
 }
